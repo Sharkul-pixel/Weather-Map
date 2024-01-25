@@ -29,8 +29,7 @@ function App() {
           // Handle non-OK responses (e.g., 404)
           const errorData = await response.json();
           console.error(`Error: ${errorData.message}`);
-          alert("City is not valid"); // Display an alert window
-          return;
+          throw new Error('City not found.'); 
         }
   
         const parsedData = await response.json();
@@ -47,7 +46,7 @@ function App() {
           weatherImg: parsedData.weather[0].main,
         }));
       } catch (error) {
-        console.error("Error fetching data:", error.message);
+        alert(error) // Display an alert window
       }
     };
   
