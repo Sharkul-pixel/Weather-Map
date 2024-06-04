@@ -1,7 +1,7 @@
 //import "dotenv/config";
 import React from 'react';
 import { useState, useEffect } from 'react';
-import SearchField from './components/searchField';
+import SearchField from './components/SearchField';
 import Weather from './components/Weather';
 import WeatherDetails from './components/WeatherDetails';
 
