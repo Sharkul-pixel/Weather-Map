@@ -15,8 +15,6 @@ function App() {
     weatherImg: ""
   });
 
-console.log(weatherData)
-
   const [location, setLocation] = useState("");
   const API_KEY = import.meta.env.VITE_APP_API_KEY;
 
