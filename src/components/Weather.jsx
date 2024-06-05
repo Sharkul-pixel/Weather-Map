@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Weather(props) {
     const {temp, city, weatherImg} = props.data;
-    
+     
     const imagePath = weatherImg ? 
         `../images/${weatherImg.toLowerCase()}.png` : "../images/rain.png" ;
    
